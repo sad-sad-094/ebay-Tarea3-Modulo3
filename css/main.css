@@ -1,0 +1,180 @@
+/* Author: Sebastian Aguirre Duque
+E-mail: sadw621@gmail.com */
+
+
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 144px;
+  margin-bottom: 30px;
+}
+
+.navbar-topsection {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  width:100%;
+  height: 96px;
+  align-items: center;
+  background-color: #184A81;
+}
+
+.logo {
+  width: 25%;
+  margin-left: 100px;
+}
+
+.search-bar {
+  display:flex;
+  flex-direction: row;
+  padding: 6px;
+  border: none;
+  border-radius: 50px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  width: 500px;
+  height: 15px;
+}
+
+.search-icon {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.profile-shopping-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 100px;
+  margin-left: 200px;
+}
+
+.navbar-bottomsection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:100%;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.navbar-bottomsection a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.features-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.section-title-container h2 {
+  font-family: 'Inter';
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.section-title-container p {
+  font-family: 'Inter';
+  font-size: 16px;
+  margin-top: 5px;
+  color: grey;
+}
+
+.section-title-container-hypertext {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 60px;
+}
+
+.section-title-container-hypertext a {
+  font-family: 'Inter';
+  font-size: 24px;
+  margin: 20px 10px;
+  color: #2975c5;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.cards-products {
+  width: 350px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 0 35px;
+}
+
+.cards-products-name {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+  margin-left: 30px;
+}
+
+.cards-categories {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 115px;
+  height: 150px;
+  margin: auto;
+  border-radius: 50px;
+}
+
+.cards-categories img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.cards-categories a {
+  font-family: 'Inter';
+  font-size: 16px;
+  margin-bottom: auto;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cards-ending-soon {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 200px;
+  height: 300px;
+  margin: auto;
+  margin-bottom: 50px;
+}

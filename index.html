@@ -1,0 +1,143 @@
+<!-- Author: Sebastian Aguirre Duque
+E-mail: sadw621@gmail.com -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Ebay Home Page</title>
+</head>
+
+<body>
+
+  <div id="navbar" class="navbar-container">
+    <div id="top-section" class="navbar-topsection">
+      <div id="ebay-logo">
+        <img src="./images/ebaylogo.png" class="logo" alt="Ebay Logo"></img>
+      </div>
+      <div id="search-bar">
+        <img src="./icons/search bar.svg"> 
+      </div>
+      <div id="profile-shoping-bttns" class="profile-shopping-icon">
+        <a href="#"><img src="./icons/Property 1=star.svg"></a>
+        <a href="#"><img src="./icons/Property 1=user.svg"></a>
+        <a href="#"><img src="./icons/Property 1=bag.svg"></a>
+      </div>
+    </div>
+    <div id="bottom-section" class="navbar-bottomsection">
+      <a href="#">Home</a>
+      <a href="#">Electronics</a>
+      <a href="#">Collectibles & Art</a>
+      <a href="#">Home & Garden</a>
+      <a href="#">Clothing & Shoes</a>
+      <a href="#">Toys</a>
+      <a href="#">Sporting Goods</a>
+      <a href="#">Jewelry</a>
+      <a href="#">More</a>
+    </div>
+  </div>
+
+  <div id="main-section">
+    <div id="featured-products" class="features-section">
+      <div class="section-title-container">
+        <h2>Featured Products</h2>
+        <p>Popular products right now</p>
+      </div>
+      <div class="cards-container">
+        <a id="product1" style="cursor:pointer;" href="./scripts/Item-Details.html" target="_blank">
+          <div style="position: relative;">
+            <img
+              src="https://tiendasbranchos.vteximg.com.br/arquivos/ids/430810-1000-1000/GW8336_1.jpg?v=637858007425170000"
+              class="cards-products">
+            <div class="cards-products-name">Ad Tenis Duramo Sl 2.0 Neg Hb Negro</div>
+          </div>
+        </a>
+        <a id="product2" style="cursor:pointer;" href="./scripts/Item-Details.html" target="_blank">
+          <div style="position: relative;">
+            <img
+              src="https://tiendasbranchos.vteximg.com.br/arquivos/ids/405842-1000-1000/237132WNVR_1.jpg?v=637685969700370000"
+              class="cards-products">
+            <div class="cards-products-name">Tenis Energy Racer Vinton Blanco</div>
+          </div>
+        </a>
+        <a id="product3" style="cursor:pointer;" href="./scripts/Item-Details.html" target="_blank">
+          <div style="position: relative;">
+            <img
+              src="https://tiendasbranchos.vteximg.com.br/arquivos/ids/410315-1000-1000/GZ8258_1.jpg?v=637720375597100000"
+              class="cards-products">
+            <div class="cards-products-name">Tenis Flexagon Gris</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div id="shoping-categories">
+      <div class="section-title-container-hypertext">
+        <h2>Shop by Categories</h2>
+        <a href="#">| See All</a>
+      </div>
+      <div class="cards-container">
+        <a href="./scripts/Item-Details.html" target="_blank" id="runningCat" class="cards-categories">
+          <img
+            src="https://tiendasbranchos.vteximg.com.br/arquivos/ids/430810-1000-1000/GW8336_1.jpg?v=637858007425170000">
+          <br>
+          Running Shoes
+        </a>
+        <a href="./scripts/Item-Details.html" target="_blank" id="casualCat" class="cards-categories">
+          <img
+            src="https://tiendasbranchos.vteximg.com.br/arquivos/ids/405842-1000-1000/237132WNVR_1.jpg?v=637685969700370000">
+          <br>
+          Casual Shoes
+        </a>
+        <a href="./scripts/Item-Details.html" target="_blank" id="trainingCat" class="cards-categories">
+          <img
+            src="https://tiendasbranchos.vteximg.com.br/arquivos/ids/410315-1000-1000/GZ8258_1.jpg?v=637720375597100000">
+          <br>
+          Training Shoes
+        </a>
+      </div>
+    </div>
+    <div id="ending-soon">
+      <div class="section-title-container-hypertext">
+        <h2>Ending Soon</h2>
+        <a href="#">| See All</a>
+      </div>
+      <div class="cards-container">
+        <a href="#" id="item-card" class="cards-ending-soon">
+          <img src="./images/beats.png">
+          <p>Beats by Dr. Dree Solo3 On Ear Wireless Headphones</p>
+          <h5>$59.99</h5>
+        </a>
+        <a href="#" id="item-card" class="cards-ending-soon">
+          <img src="./images/milkhoney.png">
+          <p>Milk and Honey - Paperback By Kaur, Rupi</p>
+          <h5>$5.99</h5>
+        </a>
+        <a href="#" id="item-card" class="cards-ending-soon">
+          <img src="./images/canon.png">
+          <p>MINT Canon Rebel T5 SLR Camera w/EF18-55mm</p>
+          <h5>$325.00</h5>
+        </a>
+        <a href="#" id="item-card" class="cards-ending-soon">
+          <img src="./images/phone.png">
+          <p>Iphone 11 Pro Max Refurbished</p>
+          <h5>$359.99</h5>
+        </a>
+        <a href="#" id="item-card" class="cards-ending-soon">
+          <img src="./images/plants.png">
+          <p>Artificial Small Fake Plants for Indoor Home Decor</p>
+          <h5>$12.99</h5>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./scripts/main.js"></script>
+  <script type="module" src="./helpers/CRUD.js"></script>
+  <script type="module" src="./scripts/index.js"></script>
+</body>
+
+</html>
