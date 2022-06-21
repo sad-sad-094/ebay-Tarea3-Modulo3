@@ -1,32 +1,24 @@
 /* Author: Sebastian Aguirre Duque
 E-mail: sadw621@gmail.com */
 
-import { itemsList } from '../helpers/CRUD.js';
+import { itemsList } from '../helpers/Get-Data.js';
 
 
 
 
 
 function openDetailsPagebyItem(name) {
-
+  
+  let products = itemsList.filter(elements => elements.category === name);
+  
+  localStorage.setItem('products', JSON.stringify(products));
 }
 
 function openDetailsPagebyCategory(name) {
 
   let products = itemsList.filter(elements => elements.category === name);
-
-  localStorage.setItem('category', name);
-
-
-  products.forEach((item, index, products) => {
-    let selectedImg1 = document.getElementById('actual-item-viewed');
-    selectedImg1.setAttribute('src', `${item[index].image}`);
-    let selectedImg2 = document.getElementById(`related${index}`);
-    selectedImg2.setAttribute('src', `${item[index].image}`);
-
-
-    document.getElementById('actual-item-name').textContent = item.tittle;
-  })
+  
+  localStorage.setItem('products', JSON.stringify(products));
 }
 
 

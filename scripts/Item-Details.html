@@ -9,6 +9,7 @@ E-mail: sadw621@gmail.com -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/Item-Details.css">
+  <link rel="shortcut icon" href="../images/ebaylogo.png">
   <title>Item Details</title>
 </head>
 
@@ -55,33 +56,33 @@ E-mail: sadw621@gmail.com -->
             <img src="../icons/Frame24.svg" style="width:4%;">
           </div>
           <p>Condition: New in Box</p>
-          <h5 id="actual-item-price">$129.99</h5>
+          <h5 id="actual-item-price"></h5>
         </div>
         <div id="sizes-section" class="size-container">
           <p>Sizes</p>
           <div id="sizes-grid">
-            <button class="size-bttns-integer" type="button">5</button>
-            <button class="size-bttns-float" type="button">5.5</button>
-            <button class="size-bttns-integer" type="button">6</button>
-            <button class="size-bttns-float" type="button">6.5</button>
-            <button class="size-bttns-integer" type="button">7</button>
-            <button class="size-bttns-float" type="button">7.5</button>
-            <button class="size-bttns-integer" type="button">8</button>
-            <button class="size-bttns-float" type="button">8.5</button>
-            <button class="size-bttns-integer" type="button">9</button>
-            <button class="size-bttns-float" type="button">9.5</button>
-            <button class="size-bttns-integer" type="button">10</button>
-            <button class="size-bttns-float" type="button">10.5</button>
-            <button class="size-bttns-integer" type="button">11</button>
-            <button class="size-bttns-float" type="button">11.5</button>
-            <button class="size-bttns-integer" type="button">12</button>
+            <button onClick="sizeSelect(this);" class="size-bttns-integer" type="button">5</button>
+            <button onClick="sizeSelect(this);" class="size-bttns-float" type="button">5.5</button>
+            <button onClick="sizeSelect(this);" class="size-bttns-integer" type="button">6</button>
+            <button onClick="sizeSelect(this);" class="size-bttns-float" type="button">6.5</button>
+            <button onClick="sizeSelect(this);" class="size-bttns-integer" type="button">7</button>
+            <button onClick="sizeSelect(this);" class="size-bttns-float" type="button">7.5</button>
+            <button onClick="sizeSelect(this);" class="size-bttns-integer" type="button">8</button>
+            <button onClick="sizeSelect(this);" class="size-bttns-float" type="button">8.5</button>
+            <button onClick="sizeSelect(this);" class="size-bttns-integer" type="button">9</button>
+            <button onClick="sizeSelect(this);" class="size-bttns-float" type="button">9.5</button>
+            <button onClick="sizeSelect(this);" class="size-bttns-integer" type="button">10</button>
+            <button onClick="sizeSelect(this);" class="size-bttns-float" type="button">10.5</button>
+            <button onClick="sizeSelect(this);" class="size-bttns-integer" type="button">11</button>
+            <button onClick="sizeSelect(this);" class="size-bttns-float" type="button">11.5</button>
+            <button onClick="sizeSelect(this);" class="size-bttns-integer" type="button">12</button>
           </div>
         </div>
         <div id="buy-section" class="buy-container">
           <div id="quantity-selector" class="quantity-container">
             <p>Quantity</p>
             <label for="quantity"></label>
-            <select name="quantity-of-item" class="dropdown-quantity-bttns">
+            <select id="quiantityItem" name="quantity-of-item" class="dropdown-quantity-bttns">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -90,11 +91,13 @@ E-mail: sadw621@gmail.com -->
             </select>
           </div>
           <div class="buy-bttns-container">
-            <button id="buynow-bttn" type="button" class="buynow-bttn">Buy Now</button>
-            <button id="addbag-bttn" type="button" class="add-to-bag-bttn">
+            <a target="_blank"><button id="buynow-bttn" type="button" class="buynow-bttn">Buy Now</button></a>
+            <a target="_blank"><button id="addbag-bttn" type="button" class="add-to-bag-bttn">
               <img src="../icons/bagblue.svg" style="width:10%;">
               Add to Bag
             </button>
+          </a>
+          <a href="./Shoppin-Bag.html" target="_blank"><button type="button" class="buynow-bttn">See Bag</button></a>
           </div>
         </div>
       </div>
@@ -156,7 +159,7 @@ E-mail: sadw621@gmail.com -->
         <img src="https://tiendasbranchos.vteximg.com.br/arquivos/ids/424044-1000-1000/CW3396-400_1.jpg?v=637807176779670000">
       </a>
       <a href="#" id="item-card" class="cards-also-viewed">
-        <img src="https://tiendasbranchos.vteximg.com.br/arquivos/ids/214422-1000-1000/52631NVY_1.jpg?v=636958669730800000">
+        <img src="https://tiendasbranchos.vteximg.com.br/arquivos/ids/436441-1000-1000/GZ0246_1.jpg?v=637906967249970000">
       </a>
       <a href="#" id="item-card" class="cards-also-viewed">
         <img src="https://tiendasbranchos.vteximg.com.br/arquivos/ids/423635-1000-1000/413020WGR_1.jpg?v=637804977038370000">
@@ -168,9 +171,10 @@ E-mail: sadw621@gmail.com -->
   </div>
 
 
-  <script type="module" src="./main.js"></script>
-  <script type="module" src="../helpers/CRUD.js"></script>
-  <script type="module" src="./index.js"></script>
+  <script src="./Item-Details.js"></script>
+  <script type="module" src="../helpers/Get-Data.js"></script>
+  <!-- <script>function sizeSelect(elemento){}</script> -->
+  <!-- <script type="module" src="./index.js"></script> -->
 </body>
 
 </html>

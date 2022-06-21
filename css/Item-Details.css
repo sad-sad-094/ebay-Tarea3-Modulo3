@@ -192,11 +192,6 @@ E-mail: sadw621@gmail.com */
   align-items: center;
 }
 
-.size-bttns:selected {
-  background-color: #184A81;
-  color: white;
-}
-
 .quantity-container {
   display: flex;
   flex-direction: column;
@@ -330,4 +325,9 @@ E-mail: sadw621@gmail.com */
   flex-direction: column;
   width: 100%;
   height: 400px;
+}
+
+.size-selector {
+  background-color: #184A81;
+  color: white;
 }
