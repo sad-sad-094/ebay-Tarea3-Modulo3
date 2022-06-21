@@ -1,6 +1,10 @@
 /* Author: Sebastian Aguirre Duque
 E-mail: sadw621@gmail.com */
 
+a {
+  text-decoration: none;
+  color: #184A81;
+}
 
 .navbar-container {
   display: flex;
